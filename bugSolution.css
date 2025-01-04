@@ -1,0 +1,1 @@
+One solution to avoid unexpected `calc()` behavior is to use only one unit type. For example, instead of `width: calc(50% - 10px);`, consider calculating the pixel value beforehand and directly setting the width in pixels:  `width: 490px;` (assuming a container width of 1000px).  Alternatively, use viewport units (`vw` or `vh`) for a more responsive approach.
